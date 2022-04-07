@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -16,12 +16,17 @@
                 <nav class="nav">
                     <h3 class="logo">MLS</h3>
                     <ul class="nav__list">
-                        <li class="list__item"><a href="" class="nav__link">home</a></li>
-                        <li class="list__item"><a href="" class="nav__link">about</a></li>
-                        <li class="list__item"><a href="" class="nav__link">contact</a></li>
-                        <li class="list__item"><a href="" class="nav__link">sign in</a></li>
-                        <li class="list__item"><a href="" class="nav__link nav__link--button btn ">sign up</a></li>
+                        <li class="list__item"><a href="" class="nav__link link">home</a></li>
+                        <li class="list__item"><a href="" class="nav__link link">about</a></li>
+                        <li class="list__item"><a href="" class="nav__link link">contact</a></li>
+                        <li class="list__item"><a href="" class="nav__link link">sign in</a></li>
+                        <li class="list__item"><a href="" class="nav__link nav__link--button btn link ">sign up</a></li>
                     </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -31,18 +36,18 @@
 
 
 
-        <section class="hero section">
-            <div class="container row">
-                <div class="hero__text--big">
+        <section class="hero section start--align hero--center">
+            <div class="container row hero--gap">
+                <div class="hero__text__big">
                     <h1 class="hero__text--big clr--white">Responsive layouts <span class="clr--brown">don't have to be a struggle</span></h1>
                 </div>
-                <div class="hero__text--small col">
+                <div class="hero__text__small col align--end">
                     <p class="hero__para clr--gray">
                         Lorem ipsum dolor sit am et , consec tetur
                         a dipiscin g elit , sed do eiusm od tempor
                         in cididunt ut labore et dolore ma gna aliqua.
                     </p>
-                    <a href="" class="hero__button btn"> i want to learn</a>
+                    <div class="hero-btn"><a href="" class="hero__button btn"> i want to learn</a></div>
                 </div>
             </div>
         </section>
@@ -53,7 +58,7 @@
 
 
         <section class="section-one section">
-            <div class="container row">
+            <div class="container row sectionOne--flex">
                 <div class="col text--align">
                     <h3 class="section__one--header sub--head clr--brown">Mobile first</h3>
                     <p class="section__one--para">
@@ -92,18 +97,20 @@
 
 
 
-        <main class="main section">
+        <main class="main section text--align ">
             <div class="container row">
-                <div class="col">
-                    <h3 class="sub--head clr--brown">It doesn't have to be so hard</h3>
-                    <p class="main__para">
-                        Lorem ipsum dolor sit am et , consec tetur a dipiscin g elit , sed do
-                        eiusm od tempor in cididunt ut labore et dolore ma gna aliqua. Ut
-                        enim a d minim veniam. Lorem ipsum dolor sit am et , consec tetur
-                        a dipiscin g elit , sed do eiusm od tempor in cididunt ut labore et
-                        dolore ma gna aliqua. Ut enim a d minim veniam
-                    </p>
-                    <img src="the-image.jpg" alt="" class="main__image">
+                <div class="col start--align main--left">
+                    <div class="col">
+                        <h3 class="main__header sub--head clr--brown">It doesn't have to be so hard</h3>
+                        <p class="main__para">
+                            Lorem ipsum dolor sit am et , consec tetur a dipiscin g elit , sed do
+                            eiusm od tempor in cididunt ut labore et dolore ma gna aliqua. Ut
+                            enim a d minim veniam. Lorem ipsum dolor sit am et , consec tetur
+                            a dipiscin g elit , sed do eiusm od tempor in cididunt ut labore et
+                            dolore ma gna aliqua. Ut enim a d minim veniam
+                        </p>
+                    </div>
+                    <img src="the-image.jpg" alt="programming scribbles" class="main__image">
                     <p class="main__para">
                         Lorem ipsum dolor sit am et , consec tetur a dipiscin g elit , sed do
                         eiusm od tempor in cididunt ut labore et dolore ma gna aliqua. Ut
@@ -113,8 +120,8 @@
                     </p>
                 </div>
                 <aside class="col aside text--align">
-                    <div class="col dark--bg text--align">
-                        <h3 class="aside__sub--head sub--head clr--white">Break is down</h3>
+                    <div class="col dark--bg text--align aside--col">
+                        <h3 class="aside__sub--head sub--head clr--white">Break it down</h3>
                         <p class="aside__para clr--gray">
                             Lorem ipsum dolor sit am et ,
                             consec tetur a dipiscin g elit , sed do
@@ -122,7 +129,7 @@
                             labore et dolore ma gna aliqua.
                         </p>
                     </div>
-                    <div class="col dark--bg text--align">
+                    <div class="col dark--bg text--align aside--col">
                         <h3 class="aside__sub--head sub--head clr--white">Work your way up</h3>
                         <p class="aside__para clr--gray">
                             Lorem ipsum dolor sit am et ,
@@ -131,7 +138,9 @@
                             labore et dolore ma gna aliqua.
                         </p>
                     </div>
-                    <div class="col dark--bg text--align">
+                    <div class="col dark--bg text--align aside--col">
+                        <h3 class="aside__sub--head sub--head clr--white">Start small</h3>
+
                         <p class="aside__para align--flex-end clr--gray">
                             Lorem ipsum dolor sit am et ,
                             consec tetur a dipiscin g elit , sed do
@@ -151,38 +160,40 @@
 
     <footer class="footer col text--align section">
         <h2 class="footer__heading clr--white">Just scratching the surface</h2>
-        <div class="container row">
+        <div class="container footer__row">
 
-            <div class="col">
+            <div class="col start--align left">
                 <h5 class="small--heading footer__sub--head  clr--brown">About our company</h5>
                 <p class="footer__para">
-                    Lorem ipsum dolor sit am et , consec tetur a dipiscin g 
-                    elit , sed do eiusm od tempor in cididunt ut labore et 
+                    Lorem ipsum dolor sit am et , consec tetur a dipiscin g
+                    elit , sed do eiusm od tempor in cididunt ut labore et
                     dolore ma gna aliqua. Ut enim a d minim veniam.
                 </p>
             </div>
-            <div class="col">
-                <h5 class="small--heading footer__sub--head  clr--brown">Getting around</h5>
-                <div class="footer__links">
-                    <li class="footer__list__item"><a href="#" class="footer__link">Home</a></li>
-                    <li class="footer__list__item"><a href="#" class="footer__link">About</a></li>
-                    <li class="footer__list__item"><a href="#" class="footer__link">Contact</a></li>
+            <div class="footer__link--row right">
+                <div class="col center">
+                    <h5 class="small--heading footer__sub--head  clr--brown">Getting around</h5>
+                    <div class="footer__links">
+                        <li class="footer__list__item"><a href="#" class="footer__link link">Home</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__link link">About</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__link link">Contact</a></li>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <h5 class="small--heading footer__sub--head  clr--brown">Other things</h5>
-                <div class="footer__links">
-                    <li class="footer__list__item"><a href="#" class="footer__link">Home</a></li>
-                    <li class="footer__list__item"><a href="#" class="footer__link">About</a></li>
-                    <li class="footer__list__item"><a href="#" class="footer__link">Contact</a></li>
+                <div class="col center">
+                    <h5 class="small--heading footer__sub--head  clr--brown">Other things</h5>
+                    <div class="footer__links">
+                        <li class="footer__list__item"><a href="#" class="footer__link link">Home</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__link link">About</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__link link">Contact</a></li>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <h5 class="small--heading footer__sub--head clr--brown">And more</h5>
-                <div class="footer__links">
-                    <li class="footer__list__item"><a href="#" class="footer__link">Home</a></li>
-                    <li class="footer__list__item"><a href="#" class="footer__link">About</a></li>
-                    <li class="footer__list__item"><a href="#" class="footer__link">Contact</a></li>
+                <div class="col center">
+                    <h5 class="small--heading footer__sub--head clr--brown">And more</h5>
+                    <div class="footer__links">
+                        <li class="footer__list__item"><a href="#" class="footer__link link">Home</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__link link">About</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__link link">Contact</a></li>
+                    </div>
                 </div>
             </div>
         </div>
