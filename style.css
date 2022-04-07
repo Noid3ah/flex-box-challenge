@@ -27,12 +27,12 @@ html {
   --font-xl2: 3rem;
   --font-xxl: 5.625rem;
   --font-xxl-phone: 2.8rem;
-  --font-xxl-phone-fluid: clamp(1.5rem, 2vw, 2.8rem);
+  --font-xxl-phone-fluid: clamp(3.7rem, 2vw + 2rem, 5rem);
 
   --btn-padding: 0.3em 1em;
 
   --line-height: 5.5rem;
-  --line-height-phone: 3.5rem;
+  --line-height-phone: 4rem;
 }
 
 body {
@@ -99,7 +99,7 @@ a {
 }
 
 .hero__text--big {
-  font-size: var(--font-xxl-phone);
+  font-size: var(--font-xxl-phone-fluid);
   line-height: var(--line-height-phone);
 }
 
@@ -124,6 +124,7 @@ a {
 
 .main__header {
   font-size: var(--font-xl1);
+  line-height: 2.5rem;
 }
 
 .main__para {
@@ -132,6 +133,7 @@ a {
 
 .footer__heading {
   font-size: var(--font-xl1);
+  line-height: 2.5rem;
 }
 
 .footer__sub--head {
@@ -154,7 +156,7 @@ a {
 }
 
 .section {
-  padding-block: 5vw;
+  padding-block: 5em;
 }
 
 .wrapper {
@@ -191,7 +193,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
   list-style: none;
   margin: 0;
   transform: translateX(100%);
@@ -208,6 +210,10 @@ a {
 
 .nav--active {
   transform: translateX(0%);
+}
+
+.list__item + .list__item {
+  margin-top: 3rem;
 }
 
 .nav__link {
@@ -229,7 +235,7 @@ a {
 .hero {
   background-color: var(--dark-bg-clr);
   text-align: center;
-  padding-block: 2em;
+  padding-block: 5em;
 }
 
 .section-one {
@@ -280,7 +286,7 @@ a {
   transform: rotate(45deg) translateX(-5.2px) translateY(-6px);
 }
 
-@media (min-width: 820px) {
+@media (min-width: 730px) {
   .header {
     align-items: center;
     justify-content: space-between;
@@ -307,17 +313,30 @@ a {
     justify-content: flex-end;
   }
 
+  .list__item + .list__item {
+    margin-top: 0rem;
+  }
+
   .burger {
     display: none;
   }
+
+  .hero__text--big {
+    font-size: var(--font-xxl);
+    line-height: 6rem;
+  }
   .sectionOne--flex {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
   }
   .aside {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+  }
+
+  .aside--col {
+    padding-block: 2.5em;
   }
   .aside__sub--head {
     line-height: 1.6rem;
@@ -352,9 +371,13 @@ a {
     text-align: start;
   }
 
+  .list__item + .list__item {
+    margin-top: 0rem;
+  }
+
   .hero__text--big {
     font-size: var(--font-xxl);
-    line-height: 5rem;
+    line-height: 6.5rem;
   }
 
   .hero {
